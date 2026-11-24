@@ -1,0 +1,74 @@
+{
+ "machine": {
+  "platform": "Windows-10-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "logical_cpus": 22,
+  "python": "3.11.9",
+  "numpy": "2.4.4",
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "jax_backend": "cpu",
+  "jax_devices": [
+   "cpu:0",
+   "cpu:1",
+   "cpu:2",
+   "cpu:3",
+   "cpu:4",
+   "cpu:5",
+   "cpu:6",
+   "cpu:7",
+   "cpu:8",
+   "cpu:9",
+   "cpu:10",
+   "cpu:11",
+   "cpu:12",
+   "cpu:13",
+   "cpu:14",
+   "cpu:15"
+  ],
+  "jax_device_kind": "cpu",
+  "xla_flags": "--xla_force_host_platform_device_count=16"
+ },
+ "families": 11,
+ "n": 500,
+ "rows": [
+  {
+   "engine": "jax",
+   "N": 10,
+   "n": 500,
+   "seconds": 0.3079,
+   "pairs_per_second": 32.5,
+   "first_call_seconds": 5.275,
+   "timed_calls": 2
+  },
+  {
+   "engine": "jax",
+   "N": 100,
+   "n": 500,
+   "seconds": 0.2983,
+   "pairs_per_second": 335.2,
+   "first_call_seconds": 0.295,
+   "timed_calls": 2
+  },
+  {
+   "engine": "jax",
+   "N": 1000,
+   "n": 500,
+   "seconds": 2.5002,
+   "pairs_per_second": 400.0,
+   "first_call_seconds": 7.575,
+   "timed_calls": 2
+  },
+  {
+   "engine": "jax",
+   "N": 4000,
+   "n": 500,
+   "seconds": 10.6941,
+   "pairs_per_second": 374.0,
+   "first_call_seconds": 16.237,
+   "timed_calls": 2
+  }
+ ],
+ "label": "laptop-cpu-16dev"
+}

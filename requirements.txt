@@ -1,0 +1,6 @@
+numpy>=1.26
+scipy>=1.11
+# optional engine (pip install -e ".[jax]"); CPU jaxlib from PyPI, or jax[cuda12/13] on Linux for a GPU
+jax>=0.4.30
+# tests
+pytest>=8

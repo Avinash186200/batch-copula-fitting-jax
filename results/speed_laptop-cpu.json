@@ -1,0 +1,113 @@
+{
+ "machine": {
+  "platform": "Windows-10-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "logical_cpus": 22,
+  "python": "3.11.9",
+  "numpy": "2.4.4",
+  "jax": "0.10.2",
+  "jaxlib": "0.10.2",
+  "jax_backend": "cpu",
+  "jax_devices": [
+   "cpu:0"
+  ],
+  "jax_device_kind": "cpu",
+  "xla_flags": ""
+ },
+ "families": 11,
+ "n": 500,
+ "rows": [
+  {
+   "engine": "reference",
+   "N": 10,
+   "n": 500,
+   "seconds": 1.8029,
+   "pairs_per_second": 5.5,
+   "first_call_seconds": 1.803,
+   "timed_calls": 1
+  },
+  {
+   "engine": "reference",
+   "N": 30,
+   "n": 500,
+   "seconds": 5.5736,
+   "pairs_per_second": 5.4,
+   "first_call_seconds": 5.574,
+   "timed_calls": 1
+  },
+  {
+   "engine": "reference",
+   "N": 100,
+   "n": 500,
+   "seconds": 18.8763,
+   "pairs_per_second": 5.3,
+   "first_call_seconds": 18.876,
+   "timed_calls": 1
+  },
+  {
+   "engine": "numpy",
+   "N": 10,
+   "n": 500,
+   "seconds": 0.5106,
+   "pairs_per_second": 19.6,
+   "first_call_seconds": 0.525,
+   "timed_calls": 2
+  },
+  {
+   "engine": "numpy",
+   "N": 100,
+   "n": 500,
+   "seconds": 4.51,
+   "pairs_per_second": 22.2,
+   "first_call_seconds": 4.588,
+   "timed_calls": 2
+  },
+  {
+   "engine": "numpy",
+   "N": 1000,
+   "n": 500,
+   "seconds": 48.7992,
+   "pairs_per_second": 20.5,
+   "first_call_seconds": 73.126,
+   "timed_calls": 2
+  },
+  {
+   "engine": "jax",
+   "N": 10,
+   "n": 500,
+   "seconds": 0.1553,
+   "pairs_per_second": 64.4,
+   "first_call_seconds": 4.215,
+   "timed_calls": 2
+  },
+  {
+   "engine": "jax",
+   "N": 100,
+   "n": 500,
+   "seconds": 0.8055,
+   "pairs_per_second": 124.1,
+   "first_call_seconds": 4.083,
+   "timed_calls": 2
+  },
+  {
+   "engine": "jax",
+   "N": 1000,
+   "n": 500,
+   "seconds": 3.8908,
+   "pairs_per_second": 257.0,
+   "first_call_seconds": 9.578,
+   "timed_calls": 2
+  },
+  {
+   "engine": "jax",
+   "N": 4000,
+   "n": 500,
+   "seconds": 16.2321,
+   "pairs_per_second": 246.4,
+   "first_call_seconds": 20.387,
+   "timed_calls": 2
+  }
+ ],
+ "label": "laptop-cpu"
+}

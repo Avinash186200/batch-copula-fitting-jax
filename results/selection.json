@@ -1,0 +1,313 @@
+{
+ "split": "holdout",
+ "engine": "jax",
+ "true_families": [
+  "gaussian",
+  "t",
+  "clayton",
+  "clayton_180",
+  "gumbel",
+  "gumbel_180",
+  "frank",
+  "clayton_90",
+  "gumbel_90"
+ ],
+ "candidates": [
+  "gaussian",
+  "t",
+  "clayton",
+  "clayton_180",
+  "clayton_90",
+  "clayton_270",
+  "gumbel",
+  "gumbel_180",
+  "gumbel_90",
+  "gumbel_270",
+  "frank"
+ ],
+ "reps_per_family": 100,
+ "tau_range": [
+  0.2,
+  0.7
+ ],
+ "t_nu_range": [
+  3.0,
+  8.0
+ ],
+ "by_n": [
+  {
+   "n": 250,
+   "pairs": 900,
+   "pairs_hit_iteration_cap": 0,
+   "accuracy": 0.81,
+   "tail_class_accuracy": 0.9022222222222223,
+   "per_family_accuracy": {
+    "gaussian": 0.69,
+    "t": 0.71,
+    "clayton": 0.86,
+    "clayton_180": 0.92,
+    "gumbel": 0.77,
+    "gumbel_180": 0.76,
+    "frank": 0.9,
+    "clayton_90": 0.89,
+    "gumbel_90": 0.79
+   },
+   "confusion": {
+    "gaussian": {
+     "gaussian": 69,
+     "t": 9,
+     "clayton": 1,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 8,
+     "gumbel_180": 6,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 7
+    },
+    "t": {
+     "gaussian": 14,
+     "t": 71,
+     "clayton": 0,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 4,
+     "gumbel_180": 9,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 2
+    },
+    "clayton": {
+     "gaussian": 0,
+     "t": 0,
+     "clayton": 86,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 0,
+     "gumbel_180": 13,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 1
+    },
+    "clayton_180": {
+     "gaussian": 0,
+     "t": 0,
+     "clayton": 0,
+     "clayton_180": 92,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 8,
+     "gumbel_180": 0,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 0
+    },
+    "gumbel": {
+     "gaussian": 3,
+     "t": 4,
+     "clayton": 0,
+     "clayton_180": 16,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 77,
+     "gumbel_180": 0,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 0
+    },
+    "gumbel_180": {
+     "gaussian": 3,
+     "t": 7,
+     "clayton": 14,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 0,
+     "gumbel_180": 76,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 0
+    },
+    "frank": {
+     "gaussian": 5,
+     "t": 2,
+     "clayton": 0,
+     "clayton_180": 1,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 0,
+     "gumbel_180": 2,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 90
+    },
+    "clayton_90": {
+     "gaussian": 1,
+     "t": 0,
+     "clayton": 0,
+     "clayton_180": 0,
+     "clayton_90": 89,
+     "clayton_270": 0,
+     "gumbel": 0,
+     "gumbel_180": 0,
+     "gumbel_90": 0,
+     "gumbel_270": 10,
+     "frank": 0
+    },
+    "gumbel_90": {
+     "gaussian": 3,
+     "t": 6,
+     "clayton": 0,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 10,
+     "gumbel": 0,
+     "gumbel_180": 0,
+     "gumbel_90": 79,
+     "gumbel_270": 0,
+     "frank": 2
+    }
+   }
+  },
+  {
+   "n": 1000,
+   "pairs": 900,
+   "pairs_hit_iteration_cap": 0,
+   "accuracy": 0.9755555555555555,
+   "tail_class_accuracy": 0.9877777777777778,
+   "per_family_accuracy": {
+    "gaussian": 0.94,
+    "t": 0.97,
+    "clayton": 1.0,
+    "clayton_180": 0.98,
+    "gumbel": 0.99,
+    "gumbel_180": 0.98,
+    "frank": 0.99,
+    "clayton_90": 0.99,
+    "gumbel_90": 0.94
+   },
+   "confusion": {
+    "gaussian": {
+     "gaussian": 94,
+     "t": 6,
+     "clayton": 0,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 0,
+     "gumbel_180": 0,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 0
+    },
+    "t": {
+     "gaussian": 0,
+     "t": 97,
+     "clayton": 0,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 1,
+     "gumbel_180": 2,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 0
+    },
+    "clayton": {
+     "gaussian": 0,
+     "t": 0,
+     "clayton": 100,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 0,
+     "gumbel_180": 0,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 0
+    },
+    "clayton_180": {
+     "gaussian": 0,
+     "t": 0,
+     "clayton": 0,
+     "clayton_180": 98,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 2,
+     "gumbel_180": 0,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 0
+    },
+    "gumbel": {
+     "gaussian": 0,
+     "t": 0,
+     "clayton": 0,
+     "clayton_180": 1,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 99,
+     "gumbel_180": 0,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 0
+    },
+    "gumbel_180": {
+     "gaussian": 0,
+     "t": 0,
+     "clayton": 2,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 0,
+     "gumbel_180": 98,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 0
+    },
+    "frank": {
+     "gaussian": 1,
+     "t": 0,
+     "clayton": 0,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 0,
+     "gumbel": 0,
+     "gumbel_180": 0,
+     "gumbel_90": 0,
+     "gumbel_270": 0,
+     "frank": 99
+    },
+    "clayton_90": {
+     "gaussian": 0,
+     "t": 0,
+     "clayton": 0,
+     "clayton_180": 0,
+     "clayton_90": 99,
+     "clayton_270": 0,
+     "gumbel": 0,
+     "gumbel_180": 0,
+     "gumbel_90": 0,
+     "gumbel_270": 1,
+     "frank": 0
+    },
+    "gumbel_90": {
+     "gaussian": 1,
+     "t": 1,
+     "clayton": 0,
+     "clayton_180": 0,
+     "clayton_90": 0,
+     "clayton_270": 4,
+     "gumbel": 0,
+     "gumbel_180": 0,
+     "gumbel_90": 94,
+     "gumbel_270": 0,
+     "frank": 0
+    }
+   }
+  }
+ ]
+}

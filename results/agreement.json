@@ -1,0 +1,38 @@
+{
+ "split": "holdout",
+ "engine": "reference vs numpy/jax",
+ "pairs": 54,
+ "n": 500,
+ "xtol": 1e-07,
+ "tolerances": {
+  "param": 0.0001,
+  "loglik": 1e-06,
+  "t_rho": 0.0001,
+  "t_loglik": 1e-06
+ },
+ "reference_pairs_not_converged": 1,
+ "engines": {
+  "numpy": {
+   "diff_max_param_one_param_families": 1.3673184700024876e-06,
+   "diff_max_loglik_one_param_families": 6.620977377469472e-11,
+   "diff_max_t_rho": 1.271958327397904e-05,
+   "diff_max_t_rel_nu": 0.004018207592278751,
+   "diff_min_t_loglik_gain_vs_ref": -1.0529319638408197e-07,
+   "diff_max_t_loglik_gain_vs_ref": 2.556112235652108e-06,
+   "same_selected_family": 54,
+   "pairs_hit_iteration_cap": 0,
+   "within_tolerance": true
+  },
+  "jax": {
+   "diff_max_param_one_param_families": 7.468697228674159e-06,
+   "diff_max_loglik_one_param_families": 2.0884272089460865e-10,
+   "diff_max_t_rho": 1.2724688828513742e-05,
+   "diff_max_t_rel_nu": 0.004020906424263856,
+   "diff_min_t_loglik_gain_vs_ref": -1.0508063041925197e-07,
+   "diff_max_t_loglik_gain_vs_ref": 2.556124130137505e-06,
+   "same_selected_family": 54,
+   "pairs_hit_iteration_cap": 0,
+   "within_tolerance": true
+  }
+ }
+}

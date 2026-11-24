@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "copulabatch"
+version = "1.0.0"
+description = "Batch maximum-likelihood fitting of bivariate copulas (Gaussian, Student-t, Clayton, Gumbel, Frank and rotations) for thousands of asset pairs: a scipy reference loop, a vectorised NumPy engine and a JAX jit+vmap engine, with recovery, agreement, AIC selection, tail-dependence and throughput checks."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "scipy>=1.11"]
+
+[project.optional-dependencies]
+jax = ["jax>=0.4.30"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+copulabatch = "copulabatch.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
