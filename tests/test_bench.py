@@ -44,6 +44,10 @@ def _diff(a, b, path="$"):
         for k in sorted(a.keys() | b.keys()):
             if k.startswith("diff_"):
                 continue
+            if k == "reference_pairs_not_converged":
+                # scipy L-BFGS-B's success flag depends on the platform's floating point
+                # (1 of 54 on Windows, 3 of 54 on Linux CI); the fitted values still agree.
+                continue
             if k not in a or k not in b:
                 out.append(f"{path}.{k}: missing")
             else:
